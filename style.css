@@ -197,31 +197,44 @@ html, body {
     color: var(--color-preto); /* Cor de fundo verde no hover */
 }
 
-/*section-img*/
+/*carrossel*/
 
-#section-img {
-    background-color: var(--cor-primaria);
+#carrossel {
     display: flex;
     flex-direction: column;
+    background-color: var(--cor-primaria);
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
-.img1 {
-    padding-top: 50px;
+#carouselExampleIndicators, #carouselone, #carouseltwo {
+    max-width: 60%;
 }
 
-.img2 {
+.d-block img {
+    max-width: 100%;
+    height: auto;
+}
+
+#carouseltwo {
     align-self: flex-end;
 }
 
-.img3 {
-    padding-bottom: 60px;
-}
+@media (max-width: 820px) {
 
-.img1 img,
-.img2 img,
-.img3 img {
-    max-width: 100%;
-    height: auto;
+    #carrossel {
+        align-items: center;
+        justify-content: center;
+       }
+    
+       #carouselExampleIndicators, #carouselone, #carouseltwo {
+        max-width: 90%;
+    }
+
+    #carouseltwo {
+        align-self: center;
+    }
+
 }
 
 /*segundo botão*/
@@ -257,7 +270,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: -10px;
+    margin-top: -20px;
 }
 
 #personalize h1 {
@@ -301,6 +314,10 @@ html, body {
         font-size: 25px;
         padding: 20px;
         max-width: 95%;
+    }
+
+    #btn-2 {
+        margin-top: -20px;
     }
 
  }
@@ -541,6 +558,10 @@ html, body {
     padding: 15px;
     color: var(--cor-branca);
 }
+
+
+
+
 
 
 

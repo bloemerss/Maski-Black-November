@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="shortcut icon" href="Logotipo_Maski_Padrão_Horizontal_Claro 2.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Maski - Black November</title>
@@ -38,17 +39,98 @@
         </div>
     </section>
 
-    <section id="section-img">
-        <div class="img1">
-            <img src="img1.svg">
+    <section id="carrossel">
+        <div id="carouselone" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"> 
+                    <div class="container-img">
+                        <img class="d-block w-100" src="img1.svg" alt="Primeiro Slide">
+                    </div>
+                </div>
+                
+                <div class="carousel-item"> 
+                        <div class="container-img">
+                            <img class="d-block w-100" src="img4.svg" alt="Primeiro Slide">
+                        </div>
+                </div>
+
+                <div class="carousel-item"> 
+                    <div class="container-img">
+                        <img class="d-block w-100" src="img5.svg" alt="Primeiro Slide">
+                    </div>
+                </div>
+            </div>
+    
+            <a class="carousel-control-prev" href="#carouselone" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselone" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
         </div>
 
-        <div class="img2">
-            <img src="img2.svg">
+        <div id="carouseltwo" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"> 
+                    <div class="container-img">
+                        <img class="d-block w-100" src="img2.svg" alt="Primeiro Slide">
+                    </div>
+                </div>
+    
+                <div class="carousel-item"> 
+                        <div class="container-img">
+                            <img class="d-block w-100" src="img6.svg" alt="Primeiro Slide">
+                        </div>
+                </div>
+    
+                <div class="carousel-item"> 
+                    <div class="container-img">
+                        <img class="d-block w-100" src="img7.svg" alt="Primeiro Slide">
+                    </div>
+                </div>
+            </div>
+    
+            <a class="carousel-control-prev" href="#carouseltwo" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouseltwo" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
         </div>
 
-        <div class="img3">
-            <img src="img3.svg">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"> 
+                    <div class="container-img">
+                        <img class="d-block w-100" src="img3.svg">
+                    </div>
+                </div>
+
+                <div class="carousel-item"> 
+                    <div class="container-img">
+                        <img class="d-block w-100" src="img8.svg" alt="Primeiro Slide">
+                    </div>
+                </div>
+    
+                <div class="carousel-item"> 
+                    <div class="container-img">
+                        <img class="d-block w-100" src="img9.svg">
+                    </div>
+                </div>
+            </div>
+    
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
         </div>
     </section>
 
@@ -91,5 +173,34 @@
         <img src="logo-footer.png">
         <p>© Copyright 2023 Grupo Vale Europeu Concretos. Todos os direitos reservados.</p>
     </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Ativa o carrossel e define um intervalo de 1 segundo entre os slides
+            $('#carouselone').carousel({
+                interval: 2000
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Ativa o carrossel e define um intervalo de 1 segundo entre os slides
+            $('#carouseltwo').carousel({
+                interval: 2000
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Ativa o carrossel e define um intervalo de 1 segundo entre os slides
+            $('#carouselExampleIndicators').carousel({
+                interval: 2000
+            });
+        });
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
