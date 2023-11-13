@@ -376,6 +376,35 @@ html, body {
     color: var(--color-preto); 
 }
 
+#btn-1{
+    background-color: #CD5C5C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    margin-top: -30px;
+    display: flex;
+    align-items: center;
+}
+
+.btn a {
+    box-shadow: 0px 4px 8px 0px rgba(55, 125, 255, 0.50);
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    border-radius: 24px;
+    padding: 12px 50px;
+    white-space: nowrap;
+    background-color: var(--color-preto);
+}
+
+.btn a:hover {
+    color: var(--cor-primaria); 
+}
+
 @media (max-width: 1110px) {
 
     #final-2 {
@@ -453,6 +482,8 @@ html, body {
     padding: 15px;
     color: var(--cor-primaria);
 }
+
+
 
 
 
